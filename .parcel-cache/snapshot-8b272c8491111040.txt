@@ -1,10 +1,13 @@
 5968
+42/workspaces/NamasteReact/package-lock.json1725126801824873268 0
+35/workspaces/NamasteReact/index.html1725126801820873268 0
+34/workspaces/NamasteReact/index.css1725126801820873268 0
+35/workspaces/NamasteReact/.gitignore1725126800972873250 0
+34/workspaces/NamasteReact/README.md1725126800968873249 0
 48/workspaces/NamasteReact/dist/index.9e4c6fd2.css1725041899389452811 0
 47/workspaces/NamasteReact/dist/index.7826abd7.js1725041914905453091 0
 54/workspaces/NamasteReact/dist/NamasteReact.3464ddca.js1724150943731761994 0
 40/workspaces/NamasteReact/dist/index.html1725041899329452810 0
-35/workspaces/NamasteReact/index.html1725040691773431065 0
-42/workspaces/NamasteReact/package-lock.json1724150872615760428 0
 60/workspaces/NamasteReact/node_modules/is-number/package.json1724149955339740236 0
 55/workspaces/NamasteReact/node_modules/is-number/LICENSE1724149955375740237 0
 56/workspaces/NamasteReact/node_modules/is-number/index.js1724149955363740237 0
@@ -2412,10 +2415,8 @@
 112/workspaces/NamasteReact/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/syntax/atrule/supports.js1724149958939740315 0
 62/workspaces/NamasteReact/node_modules/htmlparser2/lib/index.js1724149955455740239 0
 91/workspaces/NamasteReact/node_modules/caniuse-lite/data/features/css-repeating-gradients.js1724149959083740318 0
-35/workspaces/NamasteReact/.gitignore1725040521969428007 0
 103/workspaces/NamasteReact/node_modules/@parcel/package-manager/test/fixtures/packages/peers-2.0/index.js1724149958067740296 0
 56/workspaces/NamasteReact/node_modules/globals/index.d.ts1724149956135740254 0
-34/workspaces/NamasteReact/README.md1724149475147729666 0
 72/workspaces/NamasteReact/node_modules/caniuse-lite/data/features/hevc.js1724149959499740328 0
 94/workspaces/NamasteReact/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/LICENSE1724149957283740279 0
 111/workspaces/NamasteReact/node_modules/@parcel/optimizer-svgo/node_modules/svgo/lib/svgo/css-select-adapter.d.ts1724149958739740311 0
@@ -2566,7 +2567,6 @@
 45/workspaces/NamasteReact/node_modules/@parcel1724150872535760426 1
 103/workspaces/NamasteReact/node_modules/@parcel/optimizer-htmlnano/node_modules/csso/lib/replace/property1724149958227740300 1
 83/workspaces/NamasteReact/node_modules/@parcel/reporter-dev-server/src/types.js.flow1724149957251740278 0
-34/workspaces/NamasteReact/index.css1725126408896864619 0
 120/workspaces/NamasteReact/node_modules/@parcel/optimizer-svgo/node_modules/svgo/plugins/removeNonInheritableGroupAttrs.js1724149958315740302 0
 82/workspaces/NamasteReact/node_modules/csso/cjs/restructure/4-restructShorthand.cjs1724149955599740242 0
 110/workspaces/NamasteReact/node_modules/@parcel/optimizer-svgo/node_modules/mdn-data/api/inheritance.schema.json1724149957755740289 0
@@ -2719,7 +2719,7 @@
 101/workspaces/NamasteReact/node_modules/lmdb/dependencies/lmdb-data-v1/libraries/liblmdb/sample-mdb.txt1724149959239740322 0
 90/workspaces/NamasteReact/node_modules/csso/node_modules/css-tree/lib/syntax/node/Number.js1724149959303740323 0
 64/workspaces/NamasteReact/node_modules/css-tree/lib/syntax/config1724149959451740327 1
-31/workspaces/NamasteReact/App.js1725041914577453085 0
+31/workspaces/NamasteReact/App.js1725126801820873268 0
 55/workspaces/NamasteReact/node_modules/process/README.md1724150872515760426 0
 61/workspaces/NamasteReact/node_modules/@parcel/workers/LICENSE1724149956027740251 0
 77/workspaces/NamasteReact/node_modules/node-gyp-build-optional-packages/bin.js1724149955519740240 0
@@ -2792,7 +2792,7 @@
 67/workspaces/NamasteReact/node_modules/caniuse-lite/data/browsers.js1724149958259740300 0
 72/workspaces/NamasteReact/node_modules/@parcel/core/lib/Transformation.js1724149959239740322 0
 78/workspaces/NamasteReact/node_modules/css-tree/cjs/syntax/config/generator.cjs1724149958191740299 0
-37/workspaces/NamasteReact/package.json1724150872539760427 0
+37/workspaces/NamasteReact/package.json1725126801824873268 0
 80/workspaces/NamasteReact/node_modules/lightningcss/node/browserslistToTargets.js1724149957291740279 0
 108/workspaces/NamasteReact/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/syntax/node/Atrule.js1724149957503740284 0
 90/workspaces/NamasteReact/node_modules/csso/node_modules/css-tree/cjs/syntax/node/Block.cjs1724149957603740286 0

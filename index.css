@@ -20,12 +20,50 @@
     margin: 10px;
 }
 
+.restro-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.res-cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .res-card{
+    margin: 5px;
+    padding: 5px;
     width:200px;
-    height:300px;
+    height:350px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+.cuisines {
+    /* width: ; */
+    white-space: nowrap;        /* Prevents the text from wrapping onto a new line */
+    overflow: hidden;           /* Hides any content that exceeds the container */
+    text-overflow: ellipsis;    /* Adds the ellipsis (...) */
+  }
+
+.res-card:hover{
+    cursor: pointer;
     border: 1px solid black;
 }
 
+.res-card h3,
+.res-card h4,
+.res-card h5 {
+    margin: 4px 0;  /* Adjust the values to reduce spacing (4px top and bottom, 0px left and right) */
+    padding: 4px;     /* Ensure no padding is applied */
+}
+
+
 .search{
     padding: 10px;
+}
+
+.res-logo{
+    height: 160px;
+    width: 100%;
 }

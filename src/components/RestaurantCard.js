@@ -5,6 +5,8 @@ const RestaurantCard = ({ resData }) => {
             {resData.map(item => {
                 const { cloudinaryImageId, name, cuisines, avgRating, costForTwo, sla } = item.info;
                 const deliveryTime = sla ? sla.deliveryTime : 'N/A'; // handle deliveryTime
+                // console.log(name);
+                
 
                 return (
                     <div key={item.info.id} className='res-card'>

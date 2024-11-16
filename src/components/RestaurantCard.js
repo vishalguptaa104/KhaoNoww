@@ -1,15 +1,16 @@
 import { CDN_URL } from "../utils/constants";
 const RestaurantCard = ({ resData }) => {
-    return (
-        <div className='res-cards'>
-            {resData.map(item => {
-                const { cloudinaryImageId, name, cuisines, avgRating, costForTwo, sla } = item.info;
-                const deliveryTime = sla ? sla.deliveryTime : 'N/A'; // handle deliveryTime
-                // console.log(name);
-                
 
-                return (
-                    <div key={item.info.id} className='res-card'>
+    // console.log(resData);
+    
+    const { cloudinaryImageId, name, cuisines, avgRating, costForTwo, sla } = resData;
+    const deliveryTime = sla ? sla.deliveryTime : 'N/A'; // handle deliveryTime
+
+    
+
+    return (
+        <div className='res-cards'> 
+                    <div className='res-card'>
                         <img 
                             className='res-logo'
                             alt="res-logo"
@@ -21,8 +22,6 @@ const RestaurantCard = ({ resData }) => {
                         <h4>Cost: {costForTwo}</h4>
                         <h5>Delivery time: {deliveryTime} mins</h5>
                     </div>
-                );
-            })}
         </div>
     );
 };

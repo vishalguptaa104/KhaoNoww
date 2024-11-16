@@ -1,6 +1,7 @@
 import RestaurantCard from "./RestaurantCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Body = () => {
 
@@ -15,17 +16,11 @@ const Body = () => {
     const fetchData = async () => {
         const data = await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5204303&lng=73.8567437&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING');
         const json = await data.json();
-        console.log(json);
+        // console.log(json);
         const jsonData = json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
         setListOfRestaurants(jsonData);
         setFilteredRestro(jsonData);
     }
-
-    // if(){
-    //     return (
-        
-    //     )
-    // }
 
     return listOfRestaurants.length === 0 ? <Shimmer /> : (
         <div className='body'>
@@ -56,12 +51,19 @@ const Body = () => {
                     const filteredList = listOfRestaurants.filter((res)=>res.info?.avgRating > 4);
                     // console.log(filteredList)
                     setFilteredRestro(filteredList);
+                    // console.log("VISHAL", filteredRestro);
                 }}
                 >Show Top Rated</button>
+                {/* console.log("VISHAL", filteredRestro); */}
             </div>
-            <div className='restro-container'>
-                {/*can use map here to send data in chunks*/}
-                <RestaurantCard resData = {filteredRestro}/>
+            
+            <div className='restro-container'>                
+                {filteredRestro.map((restaurant) => ( 
+                    <Link key={restaurant.info.id} 
+                    to={"/restaurants/"+restaurant.info.id}
+                    style={{textDecoration: 'none'}}>
+                        <RestaurantCard resData={restaurant?.info} /></Link>
+                ))}
             </div>
         </div>
     )

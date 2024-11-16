@@ -1,9 +1,11 @@
 import useRestaurantMenu from "../utils/useRestaurantMenu.js";
 import Shimmer from "./Shimmer.js";
+import { useParams } from "react-router";
 
 const RestaurantMenu = () => {
-
-    const resInfo = useRestaurantMenu();
+    
+    const resId = useParams();
+    const resInfo = useRestaurantMenu(resId);
 
     const {
         name= "Default Restaurant Name",

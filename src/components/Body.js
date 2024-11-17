@@ -9,7 +9,7 @@ const Body = () => {
 
     const getStatus = useOnlineStatus();
     const [searchText, setSearchText] = useState("");
-    const {listOfRestaurants, filteredRestro } = useRestaurantData(); 
+    const { listOfRestaurants, filteredRestro, setFilteredRestro } = useRestaurantData();
 
     if(getStatus === false){
         return(
@@ -20,14 +20,12 @@ const Body = () => {
     return listOfRestaurants.length === 0 ? <Shimmer /> : (
         <div className='body'>
             <div className="filter">
-
                 <div className="search">
                     <input type="text" placeholder="Search Restaurant" className="search-box" value={searchText} onChange={(e)=>{
                         setSearchText(e.target.value);
                     }} />
                     <button onClick={()=>{
                          const trimmedSearchText = searchText.trim();  // Remove whitespace from both ends
-
                          if (trimmedSearchText === "") {
                            // If searchText is empty or only contains spaces, reset to the full list
                            setFilteredRestro(listOfRestaurants);
@@ -42,23 +40,19 @@ const Body = () => {
 
                 <button className="filter-btn"
                 onClick={() => {
-                    // console.log(res);
                     const filteredList = listOfRestaurants.filter((res)=>res.info?.avgRating > 4);
-                    // console.log(filteredList)
                     setFilteredRestro(filteredList);
-                    // console.log("VISHAL", filteredRestro);
                 }}
                 >Show Top Rated</button>
-                {/* console.log("VISHAL", filteredRestro); */}
             </div>
             
-            <div className='restro-container'>                
+            <div className='restro-container'>  
                 {filteredRestro.map((restaurant) => ( 
                     <Link key={restaurant.info.id} 
                     to={"/restaurants/"+restaurant.info.id}
                     style={{textDecoration: 'none'}}>
                         <RestaurantCard resData={restaurant?.info} /></Link>
-                ))}
+                ))}      
             </div>
         </div>
     )

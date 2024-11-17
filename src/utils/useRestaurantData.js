@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 
-
 const useRestaurantData = () => {
     
     const [listOfRestaurants, setListOfRestaurants] = useState([])
@@ -18,7 +17,7 @@ const useRestaurantData = () => {
         fetchData();
     } , [])
 
-    return {listOfRestaurants, filteredRestro};
+    return {listOfRestaurants, filteredRestro, setFilteredRestro};
 }
 
 export default useRestaurantData;

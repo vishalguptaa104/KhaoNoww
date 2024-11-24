@@ -19,12 +19,14 @@ const Body = () => {
 
     return listOfRestaurants.length === 0 ? <Shimmer /> : (
         <div className='body'>
-            <div className="filter">
-                <div className="search">
-                    <input type="text" placeholder="Search Restaurant" className="search-box" value={searchText} onChange={(e)=>{
+            <div className="flex justify-between">
+                <div className="m-4 p-4 rounded-lg">
+                    <input type="text" placeholder="Search Restaurant" className="border border-solid border-black" value={searchText} onChange={(e)=>{
                         setSearchText(e.target.value);
                     }} />
-                    <button onClick={()=>{
+                    <button 
+                        className="px-4 py-2 bg-green-100 m-4 rounded-lg"
+                        onClick={()=>{
                          const trimmedSearchText = searchText.trim();  // Remove whitespace from both ends
                          if (trimmedSearchText === "") {
                            // If searchText is empty or only contains spaces, reset to the full list
@@ -38,7 +40,7 @@ const Body = () => {
                     }} >Search</button>
                 </div>
 
-                <button className="filter-btn"
+                <button className="px-4 py-2 bg-green-100 m-12 rounded-lg"
                 onClick={() => {
                     const filteredList = listOfRestaurants.filter((res)=>res.info?.avgRating > 4);
                     setFilteredRestro(filteredList);
@@ -46,7 +48,7 @@ const Body = () => {
                 >Show Top Rated</button>
             </div>
             
-            <div className='restro-container'>  
+            <div className='flex flex-wrap'>  
                 {filteredRestro.map((restaurant) => ( 
                     <Link key={restaurant.info.id} 
                     to={"/restaurants/"+restaurant.info.id}

@@ -8,8 +8,6 @@ const RestaurantMenu = () => {
   const resId = useParams();
   const resInfo = useRestaurantMenu(resId);
 
-  const dummy = "Dummy Data";
-
   const [showIndex, setShowIndex] = useState(null);
 
   const {

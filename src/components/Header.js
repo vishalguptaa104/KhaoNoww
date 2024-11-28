@@ -26,12 +26,14 @@ const Header = () => {
             <Link to="/about"> About Us</Link>
           </li>
           <li className="px-4">
-            <Link to="/contact">Contact Us </Link>{" "}
+            <Link to="/contact">Contact Us </Link>
           </li>
           <li className="px-4">
-            <Link to="/grocery">Grocery</Link>{" "}
+            <Link to="/grocery">Grocery</Link>
           </li>
-          <li className="px-4 font-bold">Cart ({cartItems.length} Items)</li>
+          <li className="px-4 font-bold">
+            <Link to="/cart">Cart ({cartItems.length} Items)</Link>
+          </li>
           <button
             className="login"
             onClick={() => {

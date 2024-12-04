@@ -27,7 +27,7 @@ const Body = () => {
             type="text"
             data-testid="searchRes"
             placeholder="Search Restaurant"
-            className="border border-solid border-black"
+            className=" m-2 p-2 border border-solid border-black rounded-lg"
             value={searchText}
             onChange={(e) => {
               setSearchText(e.target.value);

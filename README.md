@@ -1,5 +1,5 @@
 # KhaoNoww
-
+ToDo - Add authentication and footer
 Some Images - 
 
 ![image](https://github.com/user-attachments/assets/9a5fdc40-e358-4194-ac54-a6ca0714cdf1)

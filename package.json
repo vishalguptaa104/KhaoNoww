@@ -8,17 +8,9 @@
     "test": "jest",
     "watch-test": "jest --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/namastedev/namaste-react.git"
-  },
   "keywords": [],
   "author": "Akshay Saini",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/namastedev/namaste-react/issues"
-  },
-  "homepage": "https://github.com/namastedev/namaste-react#readme",
   "devDependencies": {
     "@babel/core": "^7.22.9",
     "@babel/preset-env": "^7.22.9",

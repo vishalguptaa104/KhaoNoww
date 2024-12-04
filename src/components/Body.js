@@ -25,6 +25,7 @@ const Body = () => {
         <div className="m-4 p-4 rounded-lg">
           <input
             type="text"
+            data-testid="searchRes"
             placeholder="Search Restaurant"
             className="border border-solid border-black"
             value={searchText}
@@ -33,6 +34,7 @@ const Body = () => {
             }}
           />
           <button
+            data-testid="searchb"
             className="px-4 py-2 bg-green-100 m-4 rounded-lg"
             onClick={() => {
               const trimmedSearchText = searchText.trim(); // Remove whitespace from both ends

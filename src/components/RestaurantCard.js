@@ -6,7 +6,10 @@ const RestaurantCard = ({ resData }) => {
   const deliveryTime = sla ? sla.deliveryTime : "N/A"; // handle deliveryTime
 
   return (
-    <div className="m-4 p-4 w-[190px] h-[350px] rounded-lg bg-gray-100 hover:bg-gray-200">
+    <div
+      data-testid="resCard"
+      className="m-4 p-4 w-[190px] h-[350px] rounded-lg bg-gray-100 hover:bg-gray-200"
+    >
       <img
         className="rounded-lg w-[160px] h-[160px]"
         alt="res-logo"

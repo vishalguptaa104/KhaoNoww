@@ -8,8 +8,8 @@
     "build": "parcel build index.html",
     "test": "jest",
     "watch-test": "jest --watch",
-    "predeploy": "parcel build index.html --dist-dir dist --public-url  /KhaoNoww/",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "parcel build index.html --dist-dir dist",
+    "deploy": "netlify deploy --dir=dist --prod"
   },
   "author": "",
   "license": "ISC",
